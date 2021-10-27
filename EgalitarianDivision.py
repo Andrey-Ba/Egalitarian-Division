@@ -16,7 +16,7 @@ class EgalitarianDivision:
         min_util = cvxpy.Variable()
         constraint_list = []
 
-        # Add the constraints that a player cannot get more then the minimum util
+        # Add the constraints that a player cannot get less than the minimum util
         # As well as that each variable will not be negative
         for i in range(number_of_players):
             utility_of_player_i = 0
